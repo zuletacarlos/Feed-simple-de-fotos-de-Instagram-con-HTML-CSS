@@ -1,18 +1,60 @@
-
-h1{
-    text-align: center;
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: lightgray;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#segunda-caja
-{
-    display: flex;
-    align-items: center;
+header {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  border-bottom: 1px solid #dedede;
 }
-#primera-foto img{
-width: 100%;
-max-width: 360px;
-height: auto;
-display: block;
-border-radius: 8px;
+.contenedor {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 60px;
+}
+.feed {
+  width: 500px;            
+  max-width: 90vw;            
 }
 
+article[class^="post"] {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  margin: 0 0 40px;
+}
 
+[class^="post-encabezado"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #fafafa;
+  border-bottom: 1px solid #dedede;
+}
+
+[class^="post-titulo"] {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+[class^="post-fecha"] {
+  font-size: 12px;
+  color: gray
+}
+[class^="post-img"] {
+  width: 100%;
+  display: block;
+}
+
+[class^="post-footer"] {
+  margin: 0;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.45;
+}
